@@ -27,7 +27,7 @@ EOD
 ###  !/bin/bash
 ###  for x in /SourceFolder/*.abc; do mv "$x" "${x%.abc}.xyz"; done
 
-###  Rename2.sh => Add this script to crontab so files that have sent as abc will display as their original extension xyz(Work at Receiving Host)
+###  Rename2.sh => Add this script to crontab so files that have sent as abc will display as their original extension xyz (Work at Receiving Host)
 ###  #!/bin/bash
 ###  for x in /TargetFolder/tmp/*.abc; do mv "$x" "${x%.abc}.xyz"; done
 
