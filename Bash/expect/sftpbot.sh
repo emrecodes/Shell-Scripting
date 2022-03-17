@@ -30,3 +30,9 @@ EOD
 ###  Rename2.sh => Add this script to crontab so files that have sent as abc will display as their original extension xyz(Work at Receiving Host)
 ###  #!/bin/bash
 ###  for x in /TargetFolder/tmp/*.abc; do mv "$x" "${x%.abc}.xyz"; done
+
+##################  THE FLOW HERE IS AS FOLLOWS:  ##################
+## The first host wants to send files with the extension xyz to the second server, and the third server will periodically pull these files from the second server. ##
+## But sometimes there are xyz files being sent from the first to the second while the third server is pulling the file. ##
+## In this case, the third server can receive some xyz files in half. ##
+## To avoid this, you need to change the extension. When entering 3 scripts here in crontab, their timing should be adjusted accordingly. ##
